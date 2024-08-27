@@ -172,7 +172,7 @@ const NavButton = ({
           active === label ? "bg-blue-300/50" : "group-hover:bg-slate-300/50"
         )}
       >
-        {bubble && (
+        {label !== active && bubble && (
           <div className="absolute -top-2 size-4 rounded-full text-white right-2 flex items-center justify-center bg-red-700 text-xs p-1">
             {bubble}
           </div>
